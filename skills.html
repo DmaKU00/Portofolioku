@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Technical expertise, software proficiency, and education of Dimas Mubdia Alfianto.">
+  <title>Expertise — DMA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./assets/js/site.js" defer></script>
+</head>
+
+<body id="top">
+
+  <div class="topline">
+    <span>PORTOKU</span>
+    <span>BANDUNG, INDONESIA <i class="status-dot"></i> OPEN FOR COLLABORATION</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">DMA<span> / PORTFOLIO</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html">HOME</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html" class="active">EXPERTISE</a>
+      <a href="contact.html" class="nav-cta">LET'S TALK ↗</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section-grid toolkit">
+      <div class="section-index">01 / SOFTWARE</div>
+
+      <div class="toolkit-content">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DIGITAL WORKING TOOLKIT</p>
+            <h2>Software & <em>applications.</em></h2>
+          </div>
+
+          <p class="body-copy">
+            Software supporting technical documentation,
+            engineering analysis, visualization, and project controls.
+          </p>
+        </div>
+
+        <div class="tool-tags">
+          <button class="tool-tag" data-software="autocad" aria-pressed="false">AutoCAD</button>
+          <button class="tool-tag" data-software="revit" aria-pressed="false">Autodesk Revit</button>
+          <button class="tool-tag" data-software="sketchup" aria-pressed="false">SketchUp</button>
+          <button class="tool-tag" data-software="etabs" aria-pressed="false">ETABS</button>
+          <button class="tool-tag" data-software="sap2000" aria-pressed="false">SAP2000</button>
+          <button class="tool-tag" data-software="vissim" aria-pressed="false">PTV Vissim</button>
+          <button class="tool-tag" data-software="project" aria-pressed="false">Microsoft Project</button>
+          <button class="tool-tag" data-software="excel" aria-pressed="false">Microsoft Excel</button>
+          <button class="tool-tag" data-software="office" aria-pressed="false">Microsoft Office</button>
+        </div>
+
+        <!-- PROJECT IMAGE GALLERY -->
+        <div class="software-gallery" id="softwareGallery" aria-live="polite">
+          <div class="gallery-placeholder">
+            <span>PROJECT IMAGE GALLERY</span>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid intro">
+      <div class="section-index">02 / EDUCATION</div>
+
+      <div class="intro-main">
+        <p class="eyebrow">ACADEMIC BACKGROUND</p>
+        <h2>Education & <em>development.</em></h2>
+
+        <div class="profile-meta">
+          <div>
+            <span>FIELD OF STUDY</span>
+            <strong>Civil Engineering in STT Mandala Bandung</strong>
+          </div>
+
+          <div>
+            <span>ACADEMIC FOCUS</span>
+            <strong>Structure & Transportation Engineering</strong>
+          </div>
+
+          <div>
+            <span>CONTINUOUS DEVELOPMENT</span>
+            <strong>Engineering · Construction · Management</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid contact">
+      <div class="section-index">03 / NEXT STEP</div>
+
+      <div class="contact-content">
+        <p class="eyebrow">EXPLORE THE WORK</p>
+        <h2>Skills applied to <em>real projects.</em></h2>
+
+        <p class="body-large">
+          Discover how technical capabilities and project management
+          experience come together through selected project work.
+        </p>
+
+        <div class="contact-actions">
+          <a href="projects.html" class="button button-light">VIEW PROJECTS ↗</a>
+          <a href="contact.html" class="contact-email">CONTACT ME ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-grid page-navigation">
+      <a href="projects.html" class="button button-dark">← VIEW PROJECTS</a>
+      <a href="contact.html" class="button button-dark">NEXT: CONTACT ↗</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="brand">DMA</a>
+
+    <span>© <span id="currentYear">2026</span> PORTOFOLIO</span>
+    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+
+  <!-- GALERI: script dimasukkan langsung agar tidak bergantung path file -->
+  <script>
+/* assets/js/gallery.js — Galeri foto slider per software */
+(function init() {
+  const gallery = document.getElementById('softwareGallery');
+  const tags = document.querySelectorAll('.tool-tag');
+  if (!gallery || !tags.length) return;
+
+  /* ====== ISI FOTO DI SINI ======
+     Ganti path & caption dengan foto proyekmu.
+     Jumlah foto per software bebas (bisa digeser / slide). */
+  const projects = {
+    autocad: [
+      { src: './assets/img/autocad-1.jpg', caption: 'Shop drawing struktur' },
+      { src: './assets/img/autocad-2.jpg', caption: 'Denah & potongan' },
+      { src: './assets/img/autocad-3.jpg', caption: 'Detail penulangan' }
+    ],
+    revit: [
+      { src: './assets/img/revit-1.jpg', caption: 'Model BIM gedung' },
+      { src: './assets/img/revit-2.jpg', caption: 'Koordinasi MEP' },
+      { src: './assets/img/revit-3.jpg', caption: 'Tampak 3D bangunan' }
+    ],
+    sketchup: [
+      { src: './assets/img/sketchup-1.jpg', caption: 'Visualisasi 3D' },
+      { src: './assets/img/sketchup-2.jpg', caption: 'Studi massa bangunan' },
+      { src: './assets/img/sketchup-3.jpg', caption: 'Konsep fasad' }
+    ],
+    etabs: [
+      { src: './assets/img/etabs-1.jpg', caption: 'Analisis struktur gedung' },
+      { src: './assets/img/etabs-2.jpg', caption: 'Diagram gaya dalam' },
+      { src: './assets/img/etabs-3.jpg', caption: 'Pemodelan portal' }
+    ],
+    sap2000: [
+      { src: './assets/img/sap2000-1.jpg', caption: 'Analisis jembatan' },
+      { src: './assets/img/sap2000-2.jpg', caption: 'Model rangka batang' },
+      { src: './assets/img/sap2000-3.jpg', caption: 'Hasil deformasi' }
+    ],
+    vissim: [
+      { src: './assets/img/vissim-1.jpg', caption: 'Simulasi lalu lintas' },
+      { src: './assets/img/vissim-2.jpg', caption: 'Analisis persimpangan' },
+      { src: './assets/img/vissim-3.jpg', caption: 'Evaluasi kinerja ruas' }
+    ],
+    project: [
+      { src: './assets/img/msproject-1.jpg', caption: 'Time schedule' },
+      { src: './assets/img/msproject-2.jpg', caption: 'Kurva S' },
+      { src: './assets/img/msproject-3.jpg', caption: 'Resource planning' }
+    ],
+    excel: [
+      { src: './assets/img/excel-1.jpg', caption: 'RAB & monitoring' },
+      { src: './assets/img/excel-2.jpg', caption: 'Rekap volume' },
+      { src: './assets/img/excel-3.jpg', caption: 'Dashboard progres' }
+    ],
+    office: [
+      { src: './assets/img/office-1.jpg', caption: 'Laporan proyek' },
+      { src: './assets/img/office-2.jpg', caption: 'Dokumentasi teknis' },
+      { src: './assets/img/office-3.jpg', caption: 'Presentasi progres' }
+    ]
+  };
+
+
+  /* Gambar pengganti otomatis bila file foto belum ada */
+  function fallbackSVG(label, caption, n, total) {
+    const esc = function (t) { return String(t || '').replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
+    const svg =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">' +
+      '<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">' +
+      '<path d="M40 0H0V40" fill="none" stroke="#d8d8d8"/></pattern></defs>' +
+      '<rect width="1200" height="900" fill="#eee"/><rect width="1200" height="900" fill="url(#g)"/>' +
+      '<rect x="430" y="300" width="340" height="240" fill="none" stroke="#111" stroke-width="3"/>' +
+      '<path d="M600 210V630M360 420H840" stroke="#111" stroke-width="2"/>' +
+      '<text x="60" y="80" font-family="monospace" font-size="26" fill="#5a5a5a">PROJECT ' + String(n).padStart(2, '0') + '</text>' +
+      '<text x="60" y="740" font-family="sans-serif" font-weight="700" font-size="54" fill="#111">' + esc(label) + '</text>' +
+      '<text x="60" y="810" font-family="monospace" font-size="28" fill="#5a5a5a">' + esc(caption) + '</text>' +
+      '<text x="1140" y="810" text-anchor="end" font-family="monospace" font-size="26" fill="#5a5a5a">' +
+      String(n).padStart(2, '0') + ' / ' + String(total).padStart(2, '0') + '</text></svg>';
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+
+  const placeholder = gallery.innerHTML;
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text) n.textContent = text;
+    return n;
+  }
+
+  function render(key, label) {
+    const items = projects[key] || [];
+    if (!items.length) {
+      gallery.innerHTML =
+        '<div class="gallery-placeholder"><span>' + label.toUpperCase() +
+        '</span><p>Project photographs will appear here</p></div>';
+      return;
+    }
+
+    const slider = el('div', 'slider');
+    const track = el('div', 'slider-track');
+    track.tabIndex = 0;
+
+    items.forEach(function (item, i) {
+      const slide = el('figure', 'slide');
+      const img = document.createElement('img');
+      img.src = item.src;
+      img.alt = item.caption || label;
+      img.loading = 'lazy';
+      img.draggable = false;
+      img.onerror = function () {
+        img.onerror = null;
+        console.warn('[gallery] File foto tidak ditemukan:', item.src);
+        img.src = fallbackSVG(label, item.caption, i + 1, items.length);
+        slide.classList.add('is-fallback');
+      };
+      slide.appendChild(img);
+      slide.appendChild(el('figcaption', '', item.caption || ''));
+      track.appendChild(slide);
+    });
+    slider.appendChild(track);
+
+    /* bar bawah: label + titik + counter */
+    const bar = el('div', 'slider-bar');
+    bar.appendChild(el('span', 'slider-label', label.toUpperCase()));
+    const dots = el('div', 'slider-dots');
+    const counter = el('span', 'slider-count');
+    items.forEach(function (_, i) {
+      const d = el('button', 'slider-dot');
+      d.setAttribute('aria-label', 'Foto ' + (i + 1));
+      d.addEventListener('click', function () { goTo(i); });
+      dots.appendChild(d);
+    });
+    bar.appendChild(dots);
+    bar.appendChild(counter);
+    slider.appendChild(bar);
+
+    /* tombol panah (hanya jika foto > 1) */
+    const prev = el('button', 'slider-btn prev', '←');
+    const next = el('button', 'slider-btn next', '→');
+    prev.setAttribute('aria-label', 'Foto sebelumnya');
+    next.setAttribute('aria-label', 'Foto berikutnya');
+    if (items.length > 1) { slider.appendChild(prev); slider.appendChild(next); }
+
+    let index = 0;
+    function goTo(i) {
+      i = Math.max(0, Math.min(items.length - 1, i));
+      track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+    }
+    function update() {
+      index = Math.round(track.scrollLeft / track.clientWidth) || 0;
+      dots.querySelectorAll('.slider-dot').forEach(function (d, i) {
+        d.classList.toggle('active', i === index);
+      });
+      counter.textContent = String(index + 1).padStart(2, '0') + ' / ' + String(items.length).padStart(2, '0');
+      prev.disabled = index === 0;
+      next.disabled = index === items.length - 1;
+    }
+
+    prev.addEventListener('click', function () { goTo(index - 1); });
+    next.addEventListener('click', function () { goTo(index + 1); });
+    track.addEventListener('scroll', function () { requestAnimationFrame(update); });
+    track.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); goTo(index + 1); }
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); goTo(index - 1); }
+    });
+
+    /* drag dengan mouse (di HP/trackpad sudah bisa swipe bawaan) */
+    let down = false, startX = 0, startLeft = 0;
+    track.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse') return;
+      down = true; startX = e.clientX; startLeft = track.scrollLeft;
+      track.classList.add('dragging');
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      track.scrollLeft = startLeft - (e.clientX - startX);
+    });
+    window.addEventListener('pointerup', function () {
+      if (!down) return;
+      down = false;
+      track.classList.remove('dragging');
+      goTo(Math.round(track.scrollLeft / track.clientWidth));
+    });
+
+    gallery.innerHTML = '';
+    gallery.appendChild(slider);
+    update();
+  }
+
+  tags.forEach(function (tag) {
+    tag.addEventListener('click', function () {
+      const wasActive = tag.classList.contains('active');
+      tags.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-pressed', 'false');
+      });
+      if (wasActive) { gallery.innerHTML = placeholder; return; }
+      tag.classList.add('active');
+      tag.setAttribute('aria-pressed', 'true');
+      render(tag.dataset.software, tag.textContent.trim());
+    });
+  });
+})();
+
+  </script>
+
+</body>
+</html>

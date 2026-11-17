@@ -1,0 +1,720 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project case study — DMA Portfolio">
+  <title>Project Detail — DMA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./assets/js/site.js" defer></script>
+</head>
+
+<body id="top">
+
+  <div class="topline">
+    <span>PORTOKU</span>
+    <span>BANDUNG, INDONESIA <i class="status-dot"></i> OPEN FOR COLLABORATION</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">DMA</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html">HOME</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="projects.html" class="active">PROJECTS</a>
+      <a href="skills.html">EXPERTISE</a>
+      <a href="contact.html" class="nav-cta">LET'S TALK ↗</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 01 / CASE STUDY -->
+    <section class="section-grid intro">
+      <div class="section-index">01 / CASE STUDY</div>
+
+      <div class="case-study-layout">
+
+        <!-- LEFT: PROJECT GALLERY -->
+        <div class="case-gallery">
+
+          <div
+            class="gallery-main"
+            id="galleryMain"
+            role="button"
+            tabindex="0"
+            aria-label="Open project image fullscreen"
+          >
+            <div class="gallery-empty" id="galleryEmpty">
+              <strong>PROJECT IMAGE GALLERY</strong>
+              <span>Project photographs will appear here</span>
+            </div>
+
+            <img
+              id="galleryImage"
+              src=""
+              alt="Project photograph"
+              hidden
+            >
+          </div>
+
+          <div class="gallery-toolbar">
+            <span class="gallery-counter" id="galleryCounter">00 / 00</span>
+
+            <div class="gallery-controls">
+              <button type="button" id="galleryPrev"
+                aria-label="Previous image" disabled>←</button>
+
+              <button type="button" id="galleryNext"
+                aria-label="Next image" disabled>→</button>
+            </div>
+          </div>
+
+          <p class="gallery-hint">
+            SELECT IMAGE TO VIEW FULLSCREEN
+          </p>
+
+        </div>
+
+        <!-- RIGHT: PROJECT INFORMATION -->
+        <div class="project-information">
+
+          <p class="eyebrow" id="projectCategory">
+            PROJECT / CASE STUDY
+          </p>
+
+          <h2 id="projectTitle">Project <em>detail.</em></h2>
+
+          <div class="project-info-list">
+
+            <div class="project-info-item">
+              <span>Project Name</span>
+              <strong id="projectName">—</strong>
+            </div>
+
+            <div class="project-info-item">
+              <span>Year</span>
+              <strong id="projectInfoYear">—</strong>
+            </div>
+
+            <div class="project-info-item">
+              <span>Location</span>
+              <strong id="projectInfoLocation">—</strong>
+            </div>
+
+            <div class="project-info-item">
+              <span>Company</span>
+              <strong id="projectInfoCompany">—</strong>
+            </div>
+
+            <div class="project-info-item">
+              <span>Position</span>
+              <strong id="projectInfoPosition">—</strong>
+            </div>
+
+          </div>
+
+          <!-- PROJECT DESCRIPTION -->
+          <div class="project-description-block">
+            <span>DESCRIPTION</span>
+
+            <p class="project-description" id="projectDescription">
+              Project description will appear here.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FULLSCREEN LIGHTBOX -->
+    <div
+      class="project-lightbox"
+      id="projectLightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Project image fullscreen viewer"
+      aria-hidden="true"
+    >
+
+      <button type="button" class="lightbox-close"
+        id="lightboxClose" aria-label="Close fullscreen">×</button>
+
+      <button type="button" class="lightbox-prev"
+        id="lightboxPrev" aria-label="Previous image">←</button>
+
+      <div class="lightbox-image-wrap">
+        <img
+          src=""
+          alt="Fullscreen project photograph"
+          class="lightbox-image"
+          id="lightboxImage"
+        >
+      </div>
+
+      <button type="button" class="lightbox-next"
+        id="lightboxNext" aria-label="Next image">→</button>
+
+      <div class="lightbox-counter" id="lightboxCounter">
+        00 / 00
+      </div>
+
+    </div>
+
+    <!-- 02 / PROJECT NAVIGATION -->
+    <section class="section-grid project-navigation-section">
+        
+
+      <div class="project-navigation">
+        <a href="#" class="project-nav-link" id="prevProject">
+            <span class="nav-arrow">←</span>
+            <span class="nav-label">BACK</span>
+         </a>
+
+            <span class="project-nav-divider"></span>
+
+        <a href="#" class="project-nav-link" id="nextProject">
+            <span class="nav-label">NEXT</span>
+            <span class="nav-arrow">→</span>
+        </a>
+</section>
+    </section>
+
+    <!-- 03 / MORE PROJECTS -->
+    <section class="section-grid contact">
+      <div class="section-index">03 / MORE PROJECTS</div>
+
+      <div class="contact-content">
+        <p class="eyebrow">CONTINUE EXPLORING</p>
+
+        <h2>More project <em>experiences.</em></h2>
+
+        <p class="body-large">
+          Explore other selected projects and professional capabilities.
+        </p>
+
+        <div class="contact-actions">
+          <a href="projects.html" class="button button-light">
+            ALL PROJECTS ↗
+          </a>
+
+          <a href="contact.html" class="contact-email">
+            LET'S CONNECT ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-grid page-navigation">
+      <a href="projects.html" class="button button-dark">
+        ← ALL PROJECTS
+      </a>
+
+      <a href="skills.html" class="button button-dark">
+        VIEW EXPERTISE ↗
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a href="index.html" class="brand">DMA</a>
+
+    <span>© <span id="currentYear">2026</span> PORTOFOLIO</span>
+    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+
+  <script>
+
+    /* =========================================
+       01. PROJECT DATABASE
+       Tambahkan proyek baru di object ini.
+    ========================================= */
+
+    const projectData = {
+
+      "educational-building1": {
+        title: "Tzu Chi School PIK 2 - Multifunction Building",
+        name: "Educational Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 01",
+
+        year: "2026",
+        location: "Tangerang, Indonesia",
+        company: "PT. PULAUINTAN BAJAPERKASA KONSTRUKSI",
+        position: "Quantity Surveyor MEP",
+
+        description:
+          "Responsible for performing Quantity Take-Off (QTO), preparing MEP Bill of Quantities (BOQ) using AutoCAD and Advanced Microsoft Excel in accordance with SNI/AHSP standards, verifying progress and the volume of work completed in real time using the Earned Value Management (EVM) method, and integrating quantity data with the internal financial system for cost monitoring and project payment control.",
+
+        images: [
+          // "assets/images/projects/educational-building/01.jpg",
+          // "assets/images/projects/educational-building/02.jpg",
+          // "assets/images/projects/educational-building/03.jpg"
+        ]
+      },
+
+       "educational-building2": {
+        title: "Tzu Chi School PIK 2 - Early Chillhood Building",
+        name: "Educational Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 02",
+
+        year: "2026",
+        location: "Tangerang, Indonesia",
+        company: "PT. PULAUINTAN BAJAPERKASA KONSTRUKSI",
+        position: "Quantity Surveyor MEP",
+
+        description:
+          "Responsible for performing Quantity Take-Off (QTO), preparing MEP Bill of Quantities (BOQ) using AutoCAD and Advanced Microsoft Excel in accordance with SNI/AHSP standards, verifying progress and the volume of work completed in real time using the Earned Value Management (EVM) method, and integrating quantity data with the internal financial system for cost monitoring and project payment control.",
+
+        images: [
+          // "assets/images/projects/commercial-development/01.jpg",
+          // "assets/images/projects/commercial-development/02.jpg"
+        ]
+      },
+
+        "commercial-development1": {
+        title: "Renovasi Hotel Savoy Homann - Asia Afrika Wings",
+        name: "Commercial Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 03",
+
+        year: "2025",
+        location: "Bandung, Indonesia",
+        company: "PT. UNICORN TOSAN PERKASA",
+        position: "Site Manager Engineer",
+
+        description:
+          "Managed site operations and coordinated a team of over 30 staff members and subcontractors using Microsoft Project and Excel to monitor daily progress, review and approve shop drawings and as-built drawings, control the quality of work, manage inventory and track materials, and prepare final account adjustments and cost reconciliations through variance analysis and claim management, resulting in an adjustment to the project value from IDR 4.2 billion to IDR 4.5 billion (+7.1%).",
+
+        images: [
+          // "assets/images/projects/residential-development/01.jpg",
+          // "assets/images/projects/residential-development/02.jpg"
+        ]
+      },
+
+       "educational-building3": {
+        title: "Sekolah Sedaya Bintang, Summarecon Bandung",
+        name: "Educational Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 04",
+
+        year: "2025",
+        location: "Bandung, Indonesia",
+        company: "PT. UNICORN TOSAN PERKASA",
+        position: "Site Engineer",
+
+        description:
+          "Coordinated engineering deliverables and the execution of multidisciplinary work to monitor daily progress, managed engineering documentation (shop drawings, as-built drawings, method statements) and inspection checklists using AutoCAD and Microsoft Excel, and prepared final account adjustments and cost reconciliations through variance analysis and claim management, resulting in an increase in the project value from IDR 7.6 billion to IDR 8.0 billion (+5.3%).",
+
+        images: [
+          // "assets/images/projects/commercial-development/01.jpg",
+          // "assets/images/projects/commercial-development/02.jpg"
+        ]
+      },
+      
+        "commercial-development2": {
+        title: "Renovasi Hotel Savoy Homann - Tower Wings",
+        name: "Commercial Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 05",
+
+        year: "2024",
+        location: "Bandung, Indonesia",
+        company: "PT. UNICORN TOSAN PERKASA",
+        position: "Site Engineer",
+
+        description:
+          "Coordinate architectural and MEP work on renovation projects for existing buildings using AutoCAD, Revit, and daily progress monitoring; managing engineering documentation (shop drawings, as-built drawings, method statements) and technical submittals through the document control system; and preparing final account adjustments and cost reconciliations using Microsoft Excel through variance analysis and claim management, resulting in an increase in project value from IDR 6.5 billion to IDR 6.8 billion (+4.6%).",
+
+        images: [
+          // "assets/images/projects/residential-development/01.jpg",
+          // "assets/images/projects/residential-development/02.jpg"
+        ]
+      },
+
+       "educational-building4": {
+        title: "BPK Paskal 163",
+        name: "Educational Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 06",
+
+        year: "2023",
+        location: "Bandung, Indonesia",
+        company: "PT. UNICORN TOSAN PERKASA",
+        position: "Site Engineer",
+
+        description:
+          "Responsible for coordinating engineering documentation and monitoring the progress of field work through CPM scheduling, daily progress monitoring, and weekly progress reporting to the Owner; managing project technical documents (shop drawings, as -built drawings, method statements, and technical submittals) using AutoCAD and a document control system, as well as preparing final account adjustments and cost reconciliations, increasing the value from IDR 8.3 billion to IDR 8.9 billion (+7.2%) through variance analysis and claim management using Microsoft Excel.",
+
+        images: [
+          // "assets/images/projects/commercial-development/01.jpg",
+          // "assets/images/projects/commercial-development/02.jpg"
+        ]
+      },
+
+       "educational-building5": {
+        title: "Sekolah Al Azhar, Summarecon Bandung",
+        name: "Educational Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 07",
+
+        year: "2021",
+        location: "Bandung, Indonesia",
+        company: "PT. UNICORN TOSAN PERKASA",
+        position: "Site Drafter MEP",
+
+        description:
+          "Responsible for producing and finalizing MEP technical drawings, including shop drawings, as-built drawings, and composite drawings using AutoCAD, as well as supporting technical coordination with the field team through technical briefings, drawing reviews, and managing RFIs (Requests for Information) to ensure that the work is implemented in accordance with the project’s design and technical specifications.",
+
+        images: [
+          // "assets/images/projects/commercial-development/01.jpg",
+          // "assets/images/projects/commercial-development/02.jpg"
+        ]
+      },
+
+        "commercial-development3": {
+        title: "Citimal 2 Cianjur",
+        name: "Commercial Building Development",
+        category: "BUILDING CONSTRUCTION / PROJECT 08",
+
+        year: "2019",
+        location: "Cianjur, Indonesia",
+        company: "PT. UNICORN TOSAN PERKASA",
+        position: "Site Drafter Mekanikal",
+
+        description:
+          "Responsible for producing and finalizing MEP technical drawings covering HVAC, plumbing, fire protection, and utility systems (shop drawings and as-built drawings) using AutoCAD; coordinating engineering documentation and clash detection through the preparation of composite drawings using AutoCAD and SketchUp; and supporting project implementation by managing technical submittals, RFI responses, and as-built documentation using Microsoft Excel and digital reporting to ensure design integration and compliance of on-site work with technical specifications.",
+
+        images: [
+          // "assets/images/projects/residential-development/01.jpg",
+          // "assets/images/projects/residential-development/02.jpg"
+        ]
+      },
+
+    };
+
+
+    /* =========================================
+       02. PROJECT ROUTING
+       URL: project-detail.html?slug=project-id
+    ========================================= */
+
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("slug");
+
+    const projectOrder = Object.keys(projectData);
+    const project = projectData[slug];
+
+    const currentIndex = projectOrder.indexOf(slug);
+
+    const setText = (id, value) => {
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.textContent = value || "—";
+      }
+    };
+
+
+    /* =========================================
+       03. LOAD PROJECT INFORMATION
+    ========================================= */
+
+    if (project) {
+
+      document.title = project.title + " — DMA";
+
+      setText("projectCategory", project.category);
+      setText("projectTitle", project.title);
+      setText("projectName", project.name || project.title);
+      setText("projectInfoYear", project.year);
+      setText("projectInfoLocation", project.location);
+      setText("projectInfoCompany", project.company);
+      setText("projectInfoPosition", project.position);
+      setText("projectDescription", project.description);
+
+    } else {
+
+      document.title = "Project Not Found — DMA";
+
+      setText("projectCategory", "PROJECT NOT FOUND");
+      setText("projectTitle", "Project not found");
+      setText("projectName", "—");
+      setText("projectInfoYear", "—");
+      setText("projectInfoLocation", "—");
+      setText("projectInfoCompany", "—");
+      setText("projectInfoPosition", "—");
+
+      setText(
+        "projectDescription",
+        "The requested project could not be found. Please return to the project portfolio."
+      );
+
+      document.getElementById("galleryMain").hidden = true;
+
+    }
+
+
+    /* =========================================
+       04. PREVIOUS / NEXT PROJECT NAVIGATION
+    ========================================= */
+
+    const previousSlug =
+      currentIndex > 0
+        ? projectOrder[currentIndex - 1]
+        : null;
+
+    const nextSlug =
+      currentIndex >= 0 && currentIndex < projectOrder.length - 1
+        ? projectOrder[currentIndex + 1]
+        : null;
+
+    const previousLink = document.getElementById("previousProject");
+    const nextLink = document.getElementById("nextProject");
+
+    if (previousSlug) {
+
+      previousLink.href =
+        `project-detail.html?slug=${encodeURIComponent(previousSlug)}`;
+
+      previousLink.hidden = false;
+
+      setText(
+        "previousProjectName",
+        projectData[previousSlug].title
+      );
+
+    }
+
+    if (nextSlug) {
+
+      nextLink.href =
+        `project-detail.html?slug=${encodeURIComponent(nextSlug)}`;
+
+      nextLink.hidden = false;
+
+      setText(
+        "nextProjectName",
+        projectData[nextSlug].title
+      );
+
+    }
+
+    if (currentIndex >= 0) {
+
+      setText(
+        "projectPosition",
+        `${String(currentIndex + 1).padStart(2, "0")} / ${String(projectOrder.length).padStart(2, "0")}`
+      );
+
+    }
+
+
+    /* =========================================
+       05. GALLERY & LIGHTBOX
+    ========================================= */
+
+    const galleryImages =
+      project && Array.isArray(project.images)
+        ? project.images.filter(Boolean)
+        : [];
+
+    let currentImageIndex = 0;
+
+    const galleryMain = document.getElementById("galleryMain");
+    const galleryImage = document.getElementById("galleryImage");
+    const galleryEmpty = document.getElementById("galleryEmpty");
+    const galleryCounter = document.getElementById("galleryCounter");
+
+    const galleryPrev = document.getElementById("galleryPrev");
+    const galleryNext = document.getElementById("galleryNext");
+
+    const lightbox = document.getElementById("projectLightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxCounter = document.getElementById("lightboxCounter");
+
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxPrev = document.getElementById("lightboxPrev");
+    const lightboxNext = document.getElementById("lightboxNext");
+
+
+    const formatCounter = (index, total) =>
+      String(index + 1).padStart(2, "0") +
+      " / " +
+      String(total).padStart(2, "0");
+
+
+    function updateGallery() {
+
+      const total = galleryImages.length;
+
+      if (!total) {
+
+        galleryImage.hidden = true;
+        galleryEmpty.hidden = false;
+
+        galleryCounter.textContent = "00 / 00";
+
+        galleryPrev.disabled = true;
+        galleryNext.disabled = true;
+
+        return;
+      }
+
+      galleryImage.src = galleryImages[currentImageIndex];
+
+      galleryImage.alt =
+        (project.name || project.title) +
+        " — Image " + (currentImageIndex + 1);
+
+      galleryImage.hidden = false;
+      galleryEmpty.hidden = true;
+
+      galleryCounter.textContent =
+        formatCounter(currentImageIndex, total);
+
+      galleryPrev.disabled = total < 2;
+      galleryNext.disabled = total < 2;
+
+      if (lightbox.classList.contains("is-open")) {
+        updateLightbox();
+      }
+
+    }
+
+
+    function previousImage() {
+
+      if (galleryImages.length < 2) return;
+
+      currentImageIndex =
+        (currentImageIndex - 1 + galleryImages.length) %
+        galleryImages.length;
+
+      updateGallery();
+
+    }
+
+
+    function nextImage() {
+
+      if (galleryImages.length < 2) return;
+
+      currentImageIndex =
+        (currentImageIndex + 1) % galleryImages.length;
+
+      updateGallery();
+
+    }
+
+
+    function updateLightbox() {
+
+      if (!galleryImages.length) return;
+
+      lightboxImage.src = galleryImages[currentImageIndex];
+
+      lightboxImage.alt =
+        (project.name || project.title) +
+        " — Fullscreen image " + (currentImageIndex + 1);
+
+      lightboxCounter.textContent =
+        formatCounter(currentImageIndex, galleryImages.length);
+
+      const showNavigation = galleryImages.length > 1;
+
+      lightboxPrev.hidden = !showNavigation;
+      lightboxNext.hidden = !showNavigation;
+
+    }
+
+
+    function openLightbox() {
+
+      if (!galleryImages.length) return;
+
+      updateLightbox();
+
+      lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
+
+      document.body.classList.add("lightbox-active");
+
+      lightboxClose.focus();
+
+    }
+
+
+    function closeLightbox() {
+
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+
+      document.body.classList.remove("lightbox-active");
+
+      galleryMain.focus();
+
+    }
+
+
+    galleryPrev.addEventListener("click", previousImage);
+    galleryNext.addEventListener("click", nextImage);
+
+    galleryMain.addEventListener("click", openLightbox);
+
+    galleryMain.addEventListener("keydown", event => {
+
+      if (event.key === "Enter" || event.key === " ") {
+
+        event.preventDefault();
+        openLightbox();
+
+      }
+
+    });
+
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    lightboxPrev.addEventListener("click", previousImage);
+    lightboxNext.addEventListener("click", nextImage);
+
+    lightbox.addEventListener("click", event => {
+
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+
+    });
+
+
+    document.addEventListener("keydown", event => {
+
+      if (!lightbox.classList.contains("is-open")) return;
+
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowLeft") previousImage();
+      if (event.key === "ArrowRight") nextImage();
+
+    });
+
+
+    updateGallery();
+
+
+    /* =========================================
+       06. CURRENT YEAR
+    ========================================= */
+
+    setText("currentYear", new Date().getFullYear());
+
+  </script>
+
+</body>
+</html>
